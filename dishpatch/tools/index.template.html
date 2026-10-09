@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dishpatch – Food delivery, dispatched fast</title>
+<meta name="description" content="Order from the best local restaurants and track your food live.">
+<link rel="stylesheet" href="css/styles.css"></head>
+<body>
+<header>
+ <div class="logo"><i>d</i>dishpatch</div>
+ <input id="loc" class="loc" placeholder="📍 Delivery address" aria-label="Delivery address" autocomplete="street-address">
+ <input id="q" type="search" placeholder="Search restaurants or dishes" aria-label="Search">
+ <div class="mode"><button data-m="delivery">Delivery</button><button data-m="pickup">Pickup</button></div>
+ <button class="cartbtn" id="cartbtn" aria-label="Open cart">🛒 <b id="cc">0</b></button>
+</header>
+<div class="shell">
+ <nav class="side" aria-label="Quick links">
+  <button data-n="home">🏠 Home</button><button data-n="off">🏷️ Offers</button><button data-n="veg">🥬 Pure veg</button>
+  <button data-n="top">⭐ Top rated</button><button data-n="fast">⚡ Under 30 min</button><button data-n="order">🧾 My order</button>
+ </nav>
+ <div class="content">
+  <section class="promos">
+   <button class="pc" data-c="Biryani"><img src="images/hero1.svg" alt=""><span><b>Biryani Fest</b>Up to 20% off</span></button>
+   <button class="pc" data-c="Pizza"><img src="images/hero2.svg" alt=""><span><b>Pizza Night</b>Flat 25% off</span></button>
+   <button class="pc" data-c="Burgers"><img src="images/hero3.svg" alt=""><span><b>Burger Barn</b>Free delivery</span></button>
+  </section>
+  <div class="cats" id="cats"></div>
+  <div class="pills" id="pills"></div>
+  <div class="rh"><b id="count"></b><span class="fd">Free delivery on many restaurants</span><button class="pill" data-reset>Reset</button></div>
+  <main class="grid" id="grid"></main>
+ </div>
+</div>
+<footer>Dishpatch – a serverless food ordering demo on AWS Lambda, API Gateway and DynamoDB.</footer>
+<aside id="menu" aria-label="Menu"></aside><aside id="cart" aria-label="Cart"></aside>
+<div id="toast" role="status"></div>
+<script src="js/config.js"></script><script src="js/data.js"></script><script src="js/app.js"></script>
+</body></html>

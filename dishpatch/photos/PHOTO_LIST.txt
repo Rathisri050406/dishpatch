@@ -1,0 +1,62 @@
+Put one JPG per line below in this folder, named exactly as shown (landscape, about 800x530, under 150 KB each).
+Free photos: unsplash.com or pexels.com (check each licence). Missing photos fall back to the illustration.
+
+r1.jpg  -> cover photo for Amma Mess (South Indian)
+1-0.jpg  -> Full meals
+1-1.jpg  -> Chicken biryani
+1-2.jpg  -> Ghee pongal
+1-3.jpg  -> Filter coffee
+
+r2.jpg  -> cover photo for Dosa Corner (South Indian)
+2-0.jpg  -> Masala dosa
+2-1.jpg  -> Idli (3 pcs)
+2-2.jpg  -> Medu vada (2 pcs)
+2-3.jpg  -> Rava kesari
+
+r3.jpg  -> cover photo for Biryani House (Biryani)
+3-0.jpg  -> Chicken dum biryani
+3-1.jpg  -> Mutton biryani
+3-2.jpg  -> Veg biryani
+3-3.jpg  -> Raita
+
+r4.jpg  -> cover photo for Slice of Naples (Pizza)
+4-0.jpg  -> Margherita
+4-1.jpg  -> Pepperoni
+4-2.jpg  -> Paneer tikka pizza
+4-3.jpg  -> Garlic bread
+
+r5.jpg  -> cover photo for Wok Express (Chinese)
+5-0.jpg  -> Veg fried rice
+5-1.jpg  -> Chicken noodles
+5-2.jpg  -> Gobi manchurian
+5-3.jpg  -> Chilli chicken
+
+r6.jpg  -> cover photo for Burger Barn (Burgers)
+6-0.jpg  -> Aloo tikki burger
+6-1.jpg  -> Chicken burger
+6-2.jpg  -> Fries
+6-3.jpg  -> Cold coffee
+
+r7.jpg  -> cover photo for Sweet Tooth (Desserts)
+7-0.jpg  -> Gulab jamun (2 pcs)
+7-1.jpg  -> Chocolate brownie
+7-2.jpg  -> Rasmalai
+7-3.jpg  -> Falooda
+
+r8.jpg  -> cover photo for Green Bowl (Healthy)
+8-0.jpg  -> Quinoa salad
+8-1.jpg  -> Sprout chaat
+8-2.jpg  -> Fruit bowl
+8-3.jpg  -> Tender coconut
+
+r9.jpg  -> cover photo for Sakura Rolls (Sushi)
+9-0.jpg  -> Salmon roll (6 pcs)
+9-1.jpg  -> Veg maki (6 pcs)
+9-2.jpg  -> California roll
+9-3.jpg  -> Green tea
+
+r10.jpg  -> cover photo for Crispy Co. (Snacks)
+10-0.jpg  -> Loaded fries
+10-1.jpg  -> Chicken nuggets
+10-2.jpg  -> Onion rings
+10-3.jpg  -> Mango shake

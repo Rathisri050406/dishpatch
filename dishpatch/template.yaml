@@ -1,0 +1,31 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Thattu Eats backend - HTTP API + Lambda + DynamoDB
+Resources:
+  OrdersTable:
+    Type: AWS::Serverless::SimpleTable
+    Properties:
+      PrimaryKey: {Name: orderId, Type: String}
+  Api:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      CorsConfiguration:
+        AllowOrigins: ['*']
+        AllowHeaders: [Content-Type]
+        AllowMethods: [GET, POST, OPTIONS]
+  OrderFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: backend/
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.12
+      Environment:
+        Variables: {TABLE_NAME: !Ref OrdersTable}
+      Policies:
+        - DynamoDBCrudPolicy: {TableName: !Ref OrdersTable}
+      Events:
+        Create: {Type: HttpApi, Properties: {ApiId: !Ref Api, Path: /orders, Method: POST}}
+        Status: {Type: HttpApi, Properties: {ApiId: !Ref Api, Path: '/orders/{id}', Method: GET}}
+Outputs:
+  ApiUrl:
+    Value: !Sub https://${Api}.execute-api.${AWS::Region}.amazonaws.com
